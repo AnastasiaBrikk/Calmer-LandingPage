@@ -78,7 +78,7 @@ a {
 .header_box__mainlogo {
   width: 11.4vw;
   max-width: 220px;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .top {
