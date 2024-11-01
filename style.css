@@ -21,8 +21,8 @@ a {
 .header {
   background-color: #E7E7E7;
   padding: 5px 130px;
-  height: 13.7vh;
-  min-height: 86px;
+  height: 13.6vh;
+  min-height: 80px;
   max-height: 110px;
 }
 .header_box {
@@ -258,7 +258,8 @@ a {
 }
 
 .swiper {
-  width: 41vw;
+  width: 37vw;
+  max-width: 830px;
   height: -moz-max-content;
   height: max-content;
 }
@@ -274,7 +275,8 @@ a {
 
 .swiper-slide img {
   display: block;
-  width: 40vw;
+  width: 37vw;
+  max-width: 830px;
   height: -moz-max-content;
   height: max-content;
   -o-object-fit: cover;
@@ -282,7 +284,8 @@ a {
 }
 
 .swiper {
-  width: 40vw;
+  width: 37vw;
+  max-width: 830px;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -295,7 +298,8 @@ a {
 
 .mySwiper2 {
   height: 80%;
-  width: 40vw;
+  width: 37vw;
+  max-width: 830px;
 }
 
 .mySwiper {
