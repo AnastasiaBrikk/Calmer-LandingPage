@@ -558,7 +558,8 @@ a {
   color: #000;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input,
+#contactForm textarea {
   width: 100%;
   padding: 14px;
   margin-top: 15px;

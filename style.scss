@@ -615,19 +615,19 @@ a {
         font-size: 14px;
         font-weight: 400;
         text-align: center;
-        
+
     }
 }
 
 .scroll-to-top {
     position: absolute;
-    top: 25px; 
-    right: 13vw; 
-    color: #FFF457; 
-    border: none; 
+    top: 25px;
+    right: 13vw;
+    color: #FFF457;
+    border: none;
     background-color: transparent;
-    cursor: pointer; 
-    font-size: 14px; 
+    cursor: pointer;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
     z-index: 1000;
@@ -660,11 +660,12 @@ a {
     color: #000;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input,
+#contactForm textarea {
     width: 100%;
     padding: 14px;
     margin-top: 15px;
-    border:none;
+    border: none;
     background-color: #F1F1F1;
     resize: none;
 }
@@ -722,4 +723,3 @@ a {
 .submit-btn:hover {
     background-color: #FDDB3A;
 }
-
