@@ -501,6 +501,12 @@ a {
   color: #fff;
   margin-bottom: 15px;
 }
+.footer_info__link {
+  transition: color 0.3s ease;
+}
+.footer_info__link:hover {
+  color: #FFF457;
+}
 .footer_menu {
   display: flex;
   justify-content: center;

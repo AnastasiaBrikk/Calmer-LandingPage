@@ -595,6 +595,14 @@ a {
         margin-bottom: 15px;
     }
 
+    &_info__link {
+        transition: color 0.3s ease;
+    }
+
+    &_info__link:hover{
+        color: #FFF457;
+    }
+
     &_menu {
         display: flex;
         justify-content: center;
@@ -619,7 +627,6 @@ a {
         font-size: 14px;
         font-weight: 400;
         text-align: center;
-
     }
 }
 
