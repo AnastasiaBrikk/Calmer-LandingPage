@@ -21,7 +21,9 @@ a {
 .header {
     background-color: #E7E7E7;
     padding: 5px 130px;
-    height: 86px;
+    height: 13.8vh;
+    min-height: 86px;
+    max-height: 110px;
 
     &_box {
         display: flex;
