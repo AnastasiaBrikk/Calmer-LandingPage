@@ -1329,7 +1329,7 @@ a {
   }
   .delivery_text {
     font-size: 14px;
-    text-align: justify;
+    text-align: start;
   }
   .delivery_centertxt {
     width: 100%;
@@ -1369,8 +1369,7 @@ a {
 }
 @media (max-width: 420px) {
   .photos {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
   }
   .photos_flexbox {
     grid-template-columns: repeat(2, 1fr);
