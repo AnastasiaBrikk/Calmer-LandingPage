@@ -4,15 +4,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $phone = $_POST['phone_number'];
     $message = $_POST['message'];
 
-    $to = "nashua.proskuryakova.98@gmail.com"; // Email для отправки сообщений "ooo-calmer@bk.ru"
+    $to = "ooo-calmer@bk.ru";
     $subject = "Новая заявка с сайта";
     $body = "Имя: $name\nТелефон: $phone\nСообщение: $message";
-    $headers = "From: no-reply@calmer-spb.ru";
+    $headers = "From: info@calmer-spb.ru";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
+        echo json_encode(["status" => "success", "message" => "Сообщение успешно отправлено!"]);
     } else {
-        echo "Error sending message.";
+        echo json_encode(["status" => "error", "message" => "Ошибка при отправке сообщения."]);
     }
 }
-?>
