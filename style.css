@@ -490,7 +490,7 @@ a {
 
 .del-slider {
   position: relative;
-  height: 300px;
+  height: auto;
   width: 28vw;
   max-width: 550px;
   overflow: hidden;
@@ -525,17 +525,19 @@ a {
 
 .prev {
   left: 10px;
+  color: #e7c931;
 }
 
 .next {
   right: 10px;
+  color: #e7c931;
 }
 
 .photos {
   width: 100%;
   background-color: #F4F4F4;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .photos_title {
   text-align: center;
@@ -593,7 +595,8 @@ a {
   cursor: pointer;
 }
 
-.photos_prev, .photos_next {
+.photos_prev,
+.photos_next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -1063,6 +1066,10 @@ a {
   .delivery_logos {
     margin-bottom: 60px;
   }
+  .photos_flexbox {
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+  }
   .footer_box {
     width: 100%;
     gap: 10vw;
@@ -1343,6 +1350,10 @@ a {
   .form-container {
     padding: 25px 25px 30px;
   }
+  .photos_flexbox {
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+  }
   .footer_info {
     display: flex;
     flex-direction: column;
@@ -1354,6 +1365,23 @@ a {
   .footer_menu {
     display: none;
     visibility: hidden;
+  }
+}
+@media (max-width: 420px) {
+  .photos {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .photos_flexbox {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .photos_img {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
   }
 }
 @media (max-width: 375px) {
