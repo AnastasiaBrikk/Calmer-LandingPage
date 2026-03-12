@@ -338,8 +338,7 @@
             <div class="swiper-wrapper"></div>
         </div>
     </div>
-
-    </section>
+</section>
 
     <section class="order">
         <h3 class="order_title">КАК СДЕЛАТЬ ЗАКАЗ</h3>
@@ -498,7 +497,7 @@ async function loadGallery(galleryBlock) {
         const mainWrapper = galleryBlock.querySelector('.main-swiper .swiper-wrapper');
         const thumbWrapper = galleryBlock.querySelector('.thumb-swiper .swiper-wrapper');
 
-        if (!images.length) {
+        if (!Array.isArray(images) || !images.length) {
             galleryBlock.style.display = 'none';
             return;
         }
@@ -513,7 +512,7 @@ async function loadGallery(galleryBlock) {
             const thumbSlide = document.createElement('div');
             thumbSlide.classList.add('swiper-slide');
             thumbSlide.innerHTML = `
-                <img src="${image.src}" alt="${image.alt}" loading="lazy" decoding="async">
+                <img src="${image.src}" alt="${image.alt}" loading="lazy" decoding="async" fetchpriority="low">
             `;
 
             mainWrapper.appendChild(mainSlide);
@@ -542,11 +541,11 @@ async function loadGallery(galleryBlock) {
             thumbs: {
                 swiper: thumbSwiper,
             },
-            lazy: false
         });
 
     } catch (error) {
         console.error(`Ошибка загрузки галереи "${folder}":`, error);
+        galleryBlock.style.display = 'none';
     }
 }
 
