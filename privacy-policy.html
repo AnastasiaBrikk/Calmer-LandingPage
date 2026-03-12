@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательское соглашение</title>
+    <link rel="canonical" href="https://smrmetall.ru/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=2.3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        body {
+            font-family: "Roboto", serif;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 1.65;
+            color: #222;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        h1 {
+            font-size: 34px;
+            line-height: 1.25;
+            margin: 0 0 24px;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 1.35;
+            margin: 34px 0 14px;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ul {
+            margin: 0 0 18px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #555;
+            margin-bottom: 28px;
+        }
+
+        .note {
+            padding: 16px 18px;
+            background: #f6f7f9;
+            border-left: 4px solid #c9ced6;
+            margin: 24px 0;
+        }
+
+        a {
+            color: #0b57d0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+
+        footer {
+            background-color: #505050;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_box">
+            <a href="index.html" class="header_box__logo"><img class="header_box__mainlogo" src="./img/mainlogo.svg"
+                    alt="main logo"></a>
+            <div class="header_box__nav">
+                <nav class="header_box__menu">
+                    <a href="#section1" class="header_box__link">Металлообработка</a>
+                    <a href="#section2" class="header_box__link">Механообработка</a>
+                    <a href="#section3" class="header_box__link">Заточка</a>
+                    <a href="#gallery" class="header_box__link">Наши работы</a>
+                    <a href="#delivery" class="header_box__link">Доставка</a>
+                </nav>
+                <a href="#footer" class="header_box__btn">Заказать</a>
+                <div class="header_box__contacts">
+                    <a href="tel:+79818400935">+7&nbsp;981&nbsp;840 09 35</a>
+                    <a href="mailto:info@smrmetall.ru">info@smrmetall.ru</a>
+                </div>
+            </div>
+
+            <!-- Иконка бургер-меню-->
+            <div class="burger_icon" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="#000000"
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg></div>
+
+            <!-- Навигационное меню -->
+            <nav class="mobile_menu" id="mobileMenu">
+                <div class="close_icon" onclick="toggleMenu()">×</div>
+                <a href="#section1" class="mobile_menu__link">Металлообработка</a>
+                <a href="#section2" class="mobile_menu__link">Механообработка</a>
+                <a href="#section3" class="mobile_menu__link">Заточка</a>
+                <a href="#gallery" class="mobile_menu__link">Наши работы</a>
+                <a href="#delivery" class="mobile_menu__link">Доставка</a>
+                <div class="mobile_menu__contacts">
+                    <a href="tel:+79818400935">+7&nbsp;981&nbsp;840&nbsp;09&nbsp;35</a>
+                    <a href="mailto:info@smrmetall.ru">info@smrmetall.ru</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <h1>Политика обработки персональных данных</h1>
+
+            <p>Редакция от 11 марта 2026 года</p>
+
+            <h2>1. Общие положения</h2>
+
+            <p>Настоящая Политика обработки персональных данных определяет порядок обработки и защиты персональных
+                данных пользователей сайта <strong>https://smrmetall.ru</strong>.</p>
+
+            <p>Политика разработана в соответствии с требованиями Федерального закона №152-ФЗ «О персональных данных».
+            </p>
+
+            <p>Оператор персональных данных:</p>
+
+            <p>
+                <strong>Общество с ограниченной ответственностью
+                    «Система Механических Решений»</strong><br>
+                Сокращенное наименование: ООО «СМР»<br>
+                ОГРН: 1247800069505<br>
+                ИНН/КПП: 7807278960 / 780701001
+            </p>
+
+            <p>
+                Юридический адрес:<br>
+                198206, г. Санкт-Петербург,<br>
+                вн. тер. г. муниципальный округ Сосновая Поляна,<br>
+                Петергофское шоссе, д. 84 к. 7, литера А, офис 20
+            </p>
+
+            <h2>2. Персональные данные</h2>
+
+            <p>Оператор может обрабатывать следующие персональные данные пользователей:</p>
+
+            <ul>
+                <li>имя;</li>
+                <li>номер телефона;</li>
+                <li>содержание сообщения, отправленного через форму на сайте.</li>
+            </ul>
+
+            <p>Персональные данные предоставляются пользователем добровольно при заполнении формы обратной связи.</p>
+
+            <h2>3. Цели обработки персональных данных</h2>
+
+            <ul>
+                <li>обработка заявок пользователей;</li>
+                <li>обратная связь с пользователем;</li>
+                <li>предоставление консультаций по услугам компании;</li>
+                <li>подготовка коммерческих предложений.</li>
+            </ul>
+
+            <h2>4. Правовые основания обработки</h2>
+
+            <p>Обработка персональных данных осуществляется на основании согласия субъекта персональных данных.</p>
+
+            <h2>5. Порядок обработки персональных данных</h2>
+
+            <p>Обработка персональных данных осуществляется с использованием средств автоматизации через форму на сайте.
+            </p>
+
+            <p>Оператор не распространяет персональные данные и не передает их третьим лицам, за исключением случаев,
+                предусмотренных законодательством Российской Федерации.</p>
+
+            <h2>6. Срок хранения персональных данных</h2>
+
+            <p>Персональные данные хранятся в течение срока, необходимого для обработки обращения пользователя и
+                предоставления ответа.</p>
+
+            <h2>7. Защита персональных данных</h2>
+
+            <p>Оператор принимает необходимые организационные и технические меры для защиты персональных данных от
+                неправомерного доступа, изменения, раскрытия или уничтожения.</p>
+
+            <h2>8. Права пользователя</h2>
+
+            <ul>
+                <li>получать информацию о своих персональных данных;</li>
+                <li>требовать уточнения или удаления персональных данных;</li>
+                <li>отозвать согласие на обработку персональных данных.</li>
+            </ul>
+
+            <h2>9. Контактная информация оператора</h2>
+
+            <p>
+                ООО «Система Механических Решений»<br>
+                Генеральный директор: Козикова Лилия Радиковна<br>
+                Телефон: +7 (981) 840-09-35<br>
+                Email: info@smrmetall.ru<br>
+                Сайт: https://smrmetall.ru
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+        <nav class="footer_menu">
+            <a class="footer_link" href="#section1">Металлобработка</a>
+            <a class="footer_link" href="#section2">Механообработка</a>
+            <a class="footer_link" href="#gallery">Наши работы</a>
+            <a class="footer_link" href="#delivery">Доставка</a>
+        </nav>
+        <a style="display: block; text-align: center; color: white; margin-bottom: 10px;"
+            href="user-agreement.html">Пользовательское соглашение</a>
+        <a style="display: block; text-align: center; color: white; margin-bottom: 10px;"
+            href="privacy-policy.html">Политики обработки персональных данных</a>
+        <p class="footer_text">©&nbsp;2024&nbsp;CMP. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
