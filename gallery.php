@@ -40,13 +40,11 @@ foreach ($files as $filePath) {
     $webpPath = $webpDir . $webpFilename;
     $webpPublicPath = $webpUrl . $webpFilename;
 
-    // Если исходник уже webp — просто копируем в gallery-webp при необходимости
     if ($extension === 'webp') {
         if (!file_exists($webpPath)) {
             copy($filePath, $webpPath);
         }
     } else {
-        // Генерируем webp только если его ещё нет
         if (!file_exists($webpPath)) {
             convertToWebp($filePath, $webpPath, 82);
         }
@@ -63,10 +61,6 @@ foreach ($files as $filePath) {
 echo json_encode($images, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 exit;
 
-
-/**
- * Конвертация JPG/PNG в WebP
- */
 function convertToWebp(string $sourcePath, string $destinationPath, int $quality = 82): bool
 {
     $extension = strtolower(pathinfo($sourcePath, PATHINFO_EXTENSION));
@@ -100,9 +94,6 @@ function convertToWebp(string $sourcePath, string $destinationPath, int $quality
     return $result;
 }
 
-/**
- * Генерация alt
- */
 function makeAlt(string $folder, string $filename): string
 {
     $titles = [
